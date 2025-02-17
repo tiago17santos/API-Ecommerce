@@ -61,7 +61,6 @@ def login():
     return jsonify({"message": "Unauthorized. Invalid credentials"}), 401
 
 @app.route('/logout', methods=["POST"])
-
 #para proteger as rotas de login
 @login_required
 def logout():
