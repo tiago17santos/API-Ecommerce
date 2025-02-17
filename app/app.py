@@ -158,7 +158,6 @@ def add_to_cart(product_id):
         return jsonify({'message': 'Item added to the cart successfully'})
     return jsonify({'message': 'Failed to add item to the cart'}), 400
 
-
 @app.route('/api/cart/remove/<int:product_id>', methods=['DELETE'])
 @login_required
 def remove_from_cart(product_id):
